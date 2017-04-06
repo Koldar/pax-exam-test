@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.massimobono.microsi.examples.bundleexample.impl.TestBundleExampleImpl
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.088 sec <<< FAILURE! - in com.massimobono.microsi.examples.bundleexample.impl.TestBundleExampleImpl
-com.massimobono.microsi.examples.bundleexample.impl.TestBundleExampleImpl  Time elapsed: 2.043 sec  <<< ERROR!
-org.ops4j.pax.exam.TestContainerException: Problem starting test container.
-Caused by: org.osgi.framework.BundleException: Bundle symbolic name and version are not unique: bundle-example-impl:0.0.1.SNAPSHOT
-
