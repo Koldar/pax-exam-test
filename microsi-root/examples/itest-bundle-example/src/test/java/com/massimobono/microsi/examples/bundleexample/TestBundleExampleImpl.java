@@ -7,6 +7,7 @@ import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.PaxExam;
 
 import com.massimobono.microsi.examples.bundleexample.BundleExample;
+import com.massimobono.microsi.examples.bundleexample.impl.BundleExampleImpl;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.core.Is.*;
@@ -17,7 +18,11 @@ import org.ops4j.pax.exam.spi.reactors.ExamReactorStrategy;
 import org.ops4j.pax.exam.spi.reactors.PerClass;
 import org.ops4j.pax.exam.spi.reactors.PerMethod;
 import org.ops4j.pax.exam.util.Filter;
+import org.osgi.framework.BundleContext;
 import org.osgi.framework.FrameworkUtil;
+import org.osgi.framework.ServiceReference;
+import org.osgi.framework.ServiceRegistration;
+import org.osgi.util.tracker.ServiceTracker;
 
 @RunWith(PaxExam.class)
 @ExamReactorStrategy(PerClass.class)
@@ -36,11 +41,12 @@ public class TestBundleExampleImpl {
 	    );
 	}
 	
+	
 	@Test
     public void simpleGreetingImplCheck()
     {
-        //String testValue = this.bundleExample.getGreeting();
-        //assertThat(testValue, is("Hello World!"));
+		String testValue = this.bundleExample.getGreeting();
+        assertThat(testValue, is("Hello World!"));
     }
 
 	@Test

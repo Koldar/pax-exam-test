@@ -14,7 +14,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.massimobono.microsi.examples</groupId>
-			<artifactId>bundle-example</artifactId>
+			<artifactId>bundle-example-impl</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
@@ -68,24 +68,27 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+		<!-- <dependency> <groupId>javax.inject</groupId> <artifactId>javax.inject</artifactId> 
+			<version>1</version> <scope>test</scope> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject -->
 		<dependency>
-			<groupId>javax.inject</groupId>
-			<artifactId>javax.inject</artifactId>
-			<version>1</version>
-			<scope>test</scope>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.javax-inject</artifactId>
+			<version>1_2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.ops4j.pax.exam/pax-exam-link-mvn -->
-		<!-- <dependency> <groupId>org.ops4j.pax.exam</groupId> <artifactId>pax-exam-link-mvn</artifactId> 
-			<version>4.10.0</version> <scope>test</scope> </dependency> -->
 
-		<!-- https://mvnrepository.com/artifact/org.ops4j.pax.exam/pax-exam-link-assembly -->
+		<!-- https://mvnrepository.com/artifact/org.ops4j.pax.exam/pax-exam-link-mvn -->
 		<dependency>
 			<groupId>org.ops4j.pax.exam</groupId>
-			<artifactId>pax-exam-link-assembly</artifactId>
+			<artifactId>pax-exam-link-mvn</artifactId>
 			<version>4.10.0</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.ops4j.pax.exam/pax-exam-link-assembly -->
+		<!-- <dependency> <groupId>org.ops4j.pax.exam</groupId> <artifactId>pax-exam-link-assembly</artifactId> 
+			<version>4.10.0</version> <scope>test</scope> </dependency> -->
 
 
 
